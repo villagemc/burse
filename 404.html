@@ -5,9 +5,10 @@
     <title>Page Not Found</title>
     <script type="text/javascript">
       setTimeout(function() {
-        console.log(window.location.pathname);
+        const { pathname, origin } = window.location;
 
-        // window.history.pushState({}, '', '/burse/')
+        window.location.replace(origin);
+        window.history.pushState({}, '', pathname);
       }, 0);
     </script>
   </head>
