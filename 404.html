@@ -5,8 +5,9 @@
     <title>Page Not Found</title>
     <script type="text/javascript">
       setTimeout(function() {
-        console.log(window.location);
-        window.history.pushState({}, '', '/burse/')
+        console.log(window.location.pathname);
+
+        // window.history.pushState({}, '', '/burse/')
       }, 0);
     </script>
   </head>
