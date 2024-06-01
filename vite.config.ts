@@ -3,13 +3,21 @@ import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import autoprefixer from 'autoprefixer';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   base: './',
   plugins: [
     svgr(),
     react(),
-    TanStackRouterVite()
+    TanStackRouterVite(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: '404.html', dest: ''
+        }
+      ]
+    })
   ],
   resolve: {
     alias: [
@@ -25,4 +33,4 @@ export default defineConfig({
       ]
     }
   }
-})
+});
