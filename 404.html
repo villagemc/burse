@@ -8,7 +8,9 @@
       // window.location.pathname = '/burse/'
       // window.history.back();
       window.location.reload();
-      window.history.pushState({}, '', '/burse/refer');
+      setTimeout(() => {
+        window.history.pushState({}, '', '/burse/refer');
+      }, 0);
     </script>
   </head>
   <body>
