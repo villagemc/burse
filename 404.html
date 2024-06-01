@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-      setTimeout(function() {
-        const { pathname, origin } = window.location;
-        window.history.pushState({}, '', 'sdfsdf');
-      }, 0);
+      const { pathname, origin } = window.location;
+      window.location.pathname = ''
     </script>
   </head>
   <body>
