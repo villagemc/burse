@@ -7,8 +7,15 @@
       setTimeout(function() {
         const { pathname, origin } = window.location;
 
-        window.location.replace(origin);
-        window.history.pushState({}, '', pathname);
+        const pathes = pathname.split('/');
+        const pathMain = pathes[0];
+        const pathName = pathes.splice(1).join('/');
+
+        console.log(pathMain, pathName);
+
+
+        // window.location.replace(origin);
+        // window.history.pushState({}, '', pathname);
       }, 0);
     </script>
   </head>
