@@ -8,8 +8,8 @@
         const { pathname, origin } = window.location;
 
         const pathes = pathname.split('/');
-        const pathMain = pathes[0];
-        const pathName = pathes.splice(1).join('/');
+        const pathMain = pathes[1];
+        const pathName = pathes.splice(2).join('/');
 
         console.log(pathMain);
         console.log(pathName);
