@@ -6,16 +6,7 @@
     <script type="text/javascript">
       setTimeout(function() {
         const { pathname, origin } = window.location;
-
-        const pathes = pathname.split('/');
-        const pathMain = pathes[1];
-        const pathName = pathes.splice(2).join('/');
-
-        console.log(pathMain);
-        console.log(pathName);
-
-        window.location.replace(origin + '/' + pathMain);
-        window.history.pushState({}, '', '/' + pathName);
+        window.history.pushState({}, '', 'sdfsdf');
       }, 0);
     </script>
   </head>
