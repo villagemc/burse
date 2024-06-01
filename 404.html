@@ -5,8 +5,10 @@
     <title>Page Not Found</title>
     <script type="text/javascript">
       window.location.replace(window.location.href);
-      window.history.back();
-      window.history.forward();
+      setTimeout(() => {
+        window.history.forward();
+        window.history.back();
+      }, 0);
     </script>
   </head>
   <body>
